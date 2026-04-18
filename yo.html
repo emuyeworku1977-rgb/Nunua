@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  html{
+  scroll-behavior :smooth;
+} 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    background:#e60033;
+    padding:15px;
+    text-align:right;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* SECTION */
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding:50px;
+    background:#1f2430;
+    color:white;
+}
+
+/* LEFT FORM */
+.form-box{
+    width:50%;
+}
+.form-box input,
+.form-box textarea{
+    width:100%;
+    padding:;
+    margin:10px 0;
+    border:none;
+    outline:none;
+    background:#eee;
+    float: left;
+}
+.form-box textarea{
+    height:200px;
+
+}
+
+.form-box button{
+    background:#e60033;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    cursor:pointer;
+    margin-top:10px;
+}
+.form-box button:hover{
+    background:#ff1a4d;
+}
+p2{color:black;
+    font-size :20px;
+}
+
+/* RIGHT INFO */
+.info-box{
+    width:80%;
+    padding-left:30px;
+    padding-bottom: 40px;
+    font-size:2px;
+    text-align:right;
+    float: right;
+}
+
+.info-box p{
+    margin-bottom:
+    font-size :2px;
+}
+
+.info{
+    margin:5px 0;
+}
+
+/* ICON STYLE */
+.info i{
+    margin-right:10px;
+    color:#e60033;
+}
+
+/* SOCIAL ICONS */
+.social i{
+    margin-right:15px;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+    float: right;
+}
+
+.social i:hover{
+    color:#e60033;
+}
+
+
+section{
+    height:100vh;
+    padding:50px;
+}
+#home{background:lightblue;}
+#about{background:lightgreen;}
+#contact{background:lightcoral;}
+#skill{background:linear-gradient(to right,grey,blue,purple);}
+#service{background:linear-gradient(to left,yellow,#203a43);
+    
+}
+  
+#p3{background-color:lightblue;
+    font-size:20px;
+    font-style :italic;
+    text-align:center;
+
+
+}
+p2 {font-weight: bold;
+    font-size:20px;
+    text-align: center;
+}
+#wow{color:green;
+    font-size :20px;
+}
+#skil{font-size:20px;}
+.btn{color:black;
+    font-size:40px;
+    font-style:italic;
+    font-weight: bold;
+    text-align: justify;
+}
+img{width:150px;
+    height: 200px;
+    float:left;
+    
+}
+#about h1{color:purple;
+    float:right;
+}
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skill">Skills </a>
+    <a href="#service">service</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home"
+ <h1>WELCOME TO MY PORTFOLIO </h1><br>
+    <p2>I AM EMEBET WORKU </p2>
+  <p id="wow"</p></h1>
+  <footer>
+    <a href="#contact" class="btn">Read more</a>
+  </footer>
+  <script>
+  // Typing Animation (Infinite Loop)
+const text = "I am grade 11 - web design student";
+let i = 0;
+function typing() {
+  const el = document.getElementById("wow");
+
+  if (i < text.length) {
+    el.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 100);
+  } else {
+    setTimeout(() => {
+      el.innerHTML = "";
+      i = 0;
+      typing();
+    }, 1500);
+    
+    setTimeout(() => {
+      el.innerHTML = "";
+      i = 0;
+      typing();
+    }, 1500);
+  }
+}
+
+typing();
+</script>
+
+</section>
+<section id="about">About
+<h1>jfhudff hfefuuhhu mopurfg jygjrfh</h1>
+<img src="Eme.png">
+</section>
+<section id="skill">
+    <h1>My skills </h1><br>
+  <p2>
+    I am a Grade 11 student with growing skills in web design
+    and development. I can create websites using HTML and CSS,and
+    I am learning JavaScript to add
+    animations and interactive features. I enjoy designing clean layouts, adding colors, and
+    building simple, responsive web pages. I am continuously improving my skills and exploring new ideas to become a better web developer.
+    I edited video and I posted on youtube.
+    by the I have my own youtube 
+  </p2>
+</section>
+<section id="service">service
+<p>
+    <h1>SERVICE</h1>
+  <p>my services at house,at school.
+  <ul type="square"><li>At home</li></ul>
+  <ol type="1">
+    <li>  I clean house</li>
+    <li>support younger sister</li>
+    <li>study regularly</li>
+  </ol>
+  <ul type="circle"><li>At school </li></ul>
+  <ol type="A">
+    <li>attending class regularly</li>
+    <li>participate group work</li>
+    <li>respect teacher and student</li>
+  </ol>
+  </p>
+    
+</p>
+</section>
+ 
+    
+<section id="contact">
+    <!-- RIGHT -->
+    <h3>Contact </h3>
+    <div class="info-box">
+        <p>please contact and support me,just send your subjects and let me hear you!</p>
+
+        <div class="info">
+            <p><i class="fas fa-map-marker-alt"></i> Address</p>
+        </div>
+
+        <div class="info">
+            <p><i class="fas fa-phone"></i> +251 945 11 01 51</p>
+        </div>
+
+        <div class="info">
+            <p><i class="fas fa-envelope"></i> contact@email.com</p>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+    <!-- LEFT -->
+    <div class="form-box">
+        <input type="text" placeholder="your subject">
+        <textarea placeholder="message"></textarea>
+        <button>Send Message</button>
+    </div>
+
+
+    
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
